@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LIS Demo</title>
+    <script src="main.js"></script>
+    <style>
+		/* cellpadding */
+		th, td { padding: 20px; }
+
+		/* cellspacing */
+		table { border-collapse: separate; border-spacing: 20px; } /* cellspacing="5" */
+		table { border-collapse: collapse; border-spacing: 0; }   /* cellspacing="0" */
+
+		/* valign */
+		th, td { vertical-align: top; }
+	</style>
+ </head>
+  <body>
+  	<h1>LIS Demo</h1>
+
+  	<form>
+  		Sequence: 
+  		<input type="text" id="sequence_box" placeholder="enter your sequence separated by commas. eg: 1, 2, 3">
+  		<br>
+  		<br>
+  		<button onclick="find_lis()" type="button">Find LIS</button>
+  	</form>
+
+  	<div id="table_output">
+  	</div>
+  </body>
+</html>
